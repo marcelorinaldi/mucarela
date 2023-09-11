@@ -31,7 +31,7 @@ $user = $_SESSION["username"];
     <main class="formulario">
         <form action="autentica.php" method="post">
             <h1>Login</h1>
-            <input type="text" name="nome" id="nome" placeholder="Nome:"><br>
+            <input type="text" name="login" id="login" placeholder="Login:"><br>
             <input type="password" name="senha" id="senha" placeholder="Senha:"><br>
             <input type="submit" value="Entrar">
         </form>

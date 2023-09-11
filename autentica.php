@@ -1,12 +1,14 @@
 <?php
 session_start();
+require_once 'conf.php';
+
 // Verifique se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Verifique as credenciais de login (isso é apenas um exemplo simples)
+    /* Verifique as credenciais de login (isso é apenas um exemplo simples)
     $username = "marcelo";
-    $password = "666";
+    $password = "666"; */
 
-    $input_username = $_POST["nome"];
+    $input_username = $_POST["login"];
     $input_password = $_POST["senha"];
 
     $sql = "select * from cliente where login='".$input_username."' and senha='".$input_password."'";
